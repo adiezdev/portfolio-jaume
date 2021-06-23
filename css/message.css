@@ -1,0 +1,31 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.message p{
+    font: var(--body5);
+}
+.message h5{
+    font: var(--headline5)
+}
+
+
+@media screen and (min-width: 768px){
+    .message{
+
+        padding-inline-start: 233px;
+        padding-inline-end: 233px;
+        padding-block-start: 200px;
+        padding-block-end: 200px;
+        margin: auto;
+    }
+    .message p{
+        inline-size: 900px;
+        font: var(--body3);
+    }
+    .message h5{
+        inline-size: 900px;
+    }
+}

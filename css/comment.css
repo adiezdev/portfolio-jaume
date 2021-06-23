@@ -1,0 +1,50 @@
+.comments{
+    padding-block-start: 40px;
+    padding-block-end: 80px;
+
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    margin: auto;
+}
+
+.comments-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 24px;
+    padding: 24px;
+
+    border-radius: 24px;  
+    box-shadow: -2px -2px 0px 0.5px rgb(238 238 238 / 50%);
+    background: rgba(255, 255, 255, 0.2);
+    max-inline-size: 1132px;
+
+}
+
+.comments-content p{
+    font: var(--body6);
+}
+.comments-content span{
+    font: var(--caption);
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px){
+    .comments-content{
+        display: block;
+        text-align: center;
+        padding: 80px;
+    }
+    .comments-content p{
+        font: var(--body4);
+    }
+    .comments-content p.isPoppins{
+        font: var(--headline4);
+    }
+    .comments-content span{
+        font: var(--headline5);
+        opacity: 0.5;
+    }
+}
